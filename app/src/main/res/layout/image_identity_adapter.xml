@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/_74sdp"
+        android:layout_height="@dimen/_64sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_6sdp"
+        android:layout_marginRight="@dimen/_4sdp"
+        android:layout_marginLeft="@dimen/_4sdp">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_74sdp"
+            android:layout_height="@dimen/_64sdp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="@dimen/_66sdp"
+            android:layout_height="@dimen/_54sdp"
+            android:layout_centerInParent="true"
+            app:cardCornerRadius="@dimen/_2sdp">
+
+        <ImageView
+       android:layout_width="@dimen/_66sdp"
+       android:layout_height="@dimen/_54sdp"
+       android:id="@+id/imgview_docs"
+       android:scaleType="fitXY"/>
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+
+        <ImageView
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_12sdp"
+            android:background="@drawable/cross_icon"
+            android:id="@+id/imgview_cross_imgAdpt"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

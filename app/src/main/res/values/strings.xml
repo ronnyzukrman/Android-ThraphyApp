@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Therapist</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="facebook_id">362391654335485</string>
+    <string name="auth_key">auth</string>
+    <string name="auth_value">N6sa7EssImjHDBi2Q</string>
+
+
+
+
+
+
+
+    <string-array name="subcategory_array">
+        <item>Sub Category</item>
+        <item>Subcategory 1</item>
+        <item>Subcategory 2</item>
+        <item>Subcategory 3</item>
+        <item>Subcategory 4</item>
+        <item>Subcategory 5</item>
+    </string-array>
+
+
+</resources>

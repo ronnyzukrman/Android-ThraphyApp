@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/grp1" android:checkableBehavior="single">
+        <item
+
+            android:id="@+id/nav_home"
+            android:title="Home" />
+    </group>
+
+    <group android:id="@+id/grp2" android:checkableBehavior="single">
+        <item
+
+            android:id="@+id/nav_introduction"
+            android:title="Introduction" />
+    </group>
+
+
+    <group android:id="@+id/grp3"
+
+        android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_legal"
+            android:title="Legal(Informed consent)" />
+    </group>
+    <group android:id="@+id/grp4" android:checkableBehavior="single" >
+        <item
+
+            android:id="@+id/nav_alerts"
+           android:title="Alerts" />
+    </group>
+    <group android:id="@+id/grp5" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_hippa"
+            android:title="HIPPA" /></group>
+
+    <group android:id="@+id/grp6" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_profile"
+           android:title="Profile" />
+    </group>
+
+    <group android:id="@+id/grp7" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_changepassword"
+            android:title="Change Password" />
+    </group>
+
+
+    <group android:id="@+id/grp8" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_connect"
+            android:title="Connect" />
+    </group>
+    <group android:id="@+id/grp9"
+        android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_Logout"
+           android:title="Logout" />
+    </group>
+
+
+</menu>

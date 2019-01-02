@@ -1,0 +1,556 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.tenserflow.therapist.fragment.BookingDetail">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linLay_radioSel"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="horizontal">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_13sdp"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:textColor="@color/colorBlack"
+                        android:text="Therapy Type"/>
+
+                 <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                        <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                            android:scaleX="0.85"
+                            android:scaleY="0.85" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_1sdp"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Individual"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/_6sdp">
+
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleX="0.85"
+                            android:scaleY="0.85" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_1sdp"
+                        android:text="Group"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorBlack"
+                        android:text="Select Package"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleX="0.85"
+                            android:scaleY="0.85"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_1sdp"
+                            android:textSize="@dimen/_12sdp"
+                            android:text="1 Session"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/_6sdp">
+
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleX="0.85"
+                            android:scaleY="0.85"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_1sdp"
+                            android:text="6 Sessions"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linLay_radioSel"
+                android:textSize="@dimen/_13sdp"
+                android:id="@+id/txtview_select_date_time"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textColor="@color/colorBlack"
+                android:text="Select date and time"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:id="@+id/rel_date_booking_detail"
+                android:layout_below="@+id/txtview_select_date_time"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:background="@drawable/roundcorners_grey"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/img_date_booking_detail"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/calendar_icon"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:id="@+id/txtview_date"
+                    android:layout_marginLeft="8dp"
+                    android:text="Select date "
+                    android:textColor="@color/colorGrey"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_centerVertical="true"
+                    android:background="@null" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linLay_date_time"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_below="@+id/rel_date_booking_detail">
+
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="@dimen/_30sdp"
+                android:id="@+id/rel_starttime_booking_detail"
+                android:background="@drawable/roundcorners_grey"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TimePicker
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/s_timepicker">
+
+                </TimePicker>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:id="@+id/txtview_starttime_bd"
+                    android:layout_marginLeft="8dp"
+                    android:text="Start time"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_centerVertical="true"
+                    android:background="@null" />
+            </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="@dimen/_30sdp"
+                    android:id="@+id/rel_endtime_booking_detail"
+                    android:background="@drawable/roundcorners_grey"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:layout_marginRight="@dimen/_12sdp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:id="@+id/txtview_endtime_bd"
+                        android:layout_marginLeft="8dp"
+                        android:text="End time"
+                        android:textColor="@color/colorGrey"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_centerVertical="true"
+                        android:background="@null" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/rel_add_date_time"
+                    android:paddingLeft="@dimen/_6sdp"
+                    android:paddingRight="@dimen/_6sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:background="@drawable/roundedcorners_aqua">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAqua"
+                    android:textSize="@dimen/_13sdp"
+
+                    android:text="Add +"/>
+                </RelativeLayout>
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+ <android.support.v7.widget.RecyclerView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="@dimen/_12sdp"
+     android:layout_marginLeft="@dimen/_16sdp"
+     android:layout_marginRight="@dimen/_16sdp"
+     android:id="@+id/recyclerview_date_time_bd"
+     android:layout_below="@+id/linLay_date_time">
+ </android.support.v7.widget.RecyclerView>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:id="@+id/view_bd"
+                android:background="@color/colorLightGrey"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_below="@+id/recyclerview_date_time_bd">
+
+            </View>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/relLay_about_client"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_below="@+id/view_bd">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About Client"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/txtview_aboutClient"
+                    android:textColor="@color/colorAqua"/>
+                <View
+                    android:layout_width="@dimen/_85sdp"
+                    android:layout_height="2dp"
+                    android:background="@color/colorAqua"
+                    android:layout_below="@+id/txtview_aboutClient"
+                    android:layout_marginTop="@dimen/_3sdp"></View>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:id="@+id/txtview_desc_client"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/_11sdp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:text="You need to add all the information in the form.As it will be very helpful for your treatment."
+                android:layout_below="@+id/relLay_about_client"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rel_check_terms_bd"
+               android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_below="@+id/txtview_desc_client">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rel_checkbox_bd">
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/check_agree_bd" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/rel_checkbox_bd"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/rel_agree_bd">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:id="@+id/txt_agree_bd"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_10sdp"
+                        android:text="I agree to "/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/txtview_cancellationPolicy_bd"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_toRightOf="@+id/txt_agree_bd"
+                        android:text="Cancellation Policy"
+                        android:textSize="@dimen/_10sdp"
+                        android:textColor="@color/colorAqua"
+                        android:layout_marginRight="@dimen/_2sdp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_and_bd"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_toRightOf="@+id/txtview_cancellationPolicy_bd"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:text="and "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Informed consent"
+                        android:id="@+id/txtview_informed_consent_bd"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:textColor="@color/colorAqua"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_toRightOf="@+id/txt_and_bd"/>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:id="@+id/view2_bd"
+                android:background="@color/colorLightGrey"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_below="@+id/rel_check_terms_bd">
+
+            </View>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/relLay_upload"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_below="@+id/view2_bd">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/txtview_upload"
+                    android:textColor="@color/colorAqua"/>
+                <View
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="2dp"
+                    android:background="@color/colorAqua"
+                    android:layout_below="@+id/txtview_upload"
+                    android:layout_marginTop="@dimen/_3sdp"></View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rel_license"
+                android:layout_marginLeft="@dimen/_36sdp"
+                android:layout_marginRight="@dimen/_36sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_below="@+id/relLay_upload">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="License"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/colorBlack"/>
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/img_license_upload"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/uploading_archive_icon"/>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:id="@+id/view3_bd"
+                android:background="@color/colorLightGrey"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_below="@+id/rel_license">
+
+            </View>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rel_insurance"
+                android:layout_marginLeft="@dimen/_36sdp"
+                android:layout_marginRight="@dimen/_36sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_below="@+id/view3_bd">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Insurance Card"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/colorBlack"/>
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:id="@+id/img_insurance_upload"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/uploading_archive_icon"/>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:id="@+id/view4_bd"
+                android:background="@color/colorLightGrey"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_below="@+id/rel_insurance">
+            </View>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view4_bd"
+                android:layout_marginLeft="@dimen/_18sdp"
+                android:layout_marginRight="@dimen/_18sdp"
+                android:id="@+id/recyclerview_image_identity">
+            </android.support.v7.widget.RecyclerView>
+
+            <RelativeLayout
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@+id/recyclerview_image_identity"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:background="@drawable/roundcorners_aqua">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/colorWhite"
+                    android:text="Pay Now"/>
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
